@@ -1,5 +1,5 @@
 //
-//  MPAppDelegate.h
+//  AppDelegate.h
 //  MPServiceBridge
 //
 //  Created by zhichaoDong on 04/14/2022.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface MPAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

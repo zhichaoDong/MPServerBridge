@@ -1,0 +1,6 @@
+framework module MPServiceBridge {
+  umbrella header "MPServiceBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

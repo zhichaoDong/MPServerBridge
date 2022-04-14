@@ -1,14 +1,14 @@
 //
-//  MPAppDelegate.m
+//  AppDelegate.m
 //  MPServiceBridge
 //
 //  Created by zhichaoDong on 04/14/2022.
 //  Copyright (c) 2022 zhichaoDong. All rights reserved.
 //
 
-#import "MPAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation MPAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

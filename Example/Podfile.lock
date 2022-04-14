@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - MPServiceBridge (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - MPServiceBridge (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  MPServiceBridge:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  MPServiceBridge: 28cbbfc89b37615b44e4f8f8a11abeff8bf6bc79
+
+PODFILE CHECKSUM: 03dc87614675bdf0ae63bcb5f7f9b9dc9fd1c26c
+
+COCOAPODS: 1.11.3
