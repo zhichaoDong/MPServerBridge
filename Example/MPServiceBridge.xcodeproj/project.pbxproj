@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		099644878B576F418D8C2CE7 /* Pods_MPServiceBridge_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B390ADCF93E18037A3FB31 /* Pods_MPServiceBridge_Example.framework */; };
+		4750FB4B28094B2D007D9DC1 /* MPAliPayService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750FB4828094B2D007D9DC1 /* MPAliPayService.m */; };
+		4750FB4C28094B2D007D9DC1 /* MPWeChatService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750FB4A28094B2D007D9DC1 /* MPWeChatService.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,7 +25,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D8558AF3D5A8D563A29BB33A /* Pods_MPServiceBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2144BDBA5680AB241389E243 /* Pods_MPServiceBridge_Tests.framework */; };
+		9FB68838FE931082D43D302F /* Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5AFF0DE2874B4464527972E /* Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +40,13 @@
 
 /* Begin PBXFileReference section */
 		001755247B07877ADF11E6D6 /* Pods-MPServiceBridge_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Example.debug.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Example/Pods-MPServiceBridge_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2144BDBA5680AB241389E243 /* Pods_MPServiceBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPServiceBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30178FF141989CEAB7F56BED /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		443F4E4CA1818F35A6A88355 /* Pods-MPServiceBridge_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Example.release.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Example/Pods-MPServiceBridge_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4750FB4728094B2D007D9DC1 /* MPWeChatService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPWeChatService.h; sourceTree = "<group>"; };
+		4750FB4828094B2D007D9DC1 /* MPAliPayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPAliPayService.m; sourceTree = "<group>"; };
+		4750FB4928094B2D007D9DC1 /* MPAliPayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPAliPayService.h; sourceTree = "<group>"; };
+		4750FB4A28094B2D007D9DC1 /* MPWeChatService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPWeChatService.m; sourceTree = "<group>"; };
+		488BC399E8115195D3F4F9E3 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Example-MPServiceBridge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Example-MPServiceBridge_Tests/Pods-MPServiceBridge_Example-MPServiceBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MPServiceBridge_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPServiceBridge_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,12 +67,14 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7722C96E9C812DF6970BEF84 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Example-MPServiceBridge_Tests.release.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Example-MPServiceBridge_Tests/Pods-MPServiceBridge_Example-MPServiceBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		83B390ADCF93E18037A3FB31 /* Pods_MPServiceBridge_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPServiceBridge_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93E16ECC81286828C8E59C87 /* Pods-MPServiceBridge_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Tests.release.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Tests/Pods-MPServiceBridge_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A1BC9B51CDF98299C434758E /* MPServiceBridge.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MPServiceBridge.podspec; path = ../MPServiceBridge.podspec; sourceTree = "<group>"; };
 		AE9599CEDFCC2F9BD68872AF /* Pods-MPServiceBridge_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPServiceBridge_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MPServiceBridge_Tests/Pods-MPServiceBridge_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED5390D8F00341DEFE3469FF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F5AFF0DE2874B4464527972E /* Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +96,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				D8558AF3D5A8D563A29BB33A /* Pods_MPServiceBridge_Tests.framework in Frameworks */,
+				9FB68838FE931082D43D302F /* Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4750FB4628094B09007D9DC1 /* AppServices */ = {
+			isa = PBXGroup;
+			children = (
+				4750FB4928094B2D007D9DC1 /* MPAliPayService.h */,
+				4750FB4828094B2D007D9DC1 /* MPAliPayService.m */,
+				4750FB4728094B2D007D9DC1 /* MPWeChatService.h */,
+				4750FB4A28094B2D007D9DC1 /* MPWeChatService.m */,
+			);
+			name = AppServices;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +143,7 @@
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				83B390ADCF93E18037A3FB31 /* Pods_MPServiceBridge_Example.framework */,
-				2144BDBA5680AB241389E243 /* Pods_MPServiceBridge_Tests.framework */,
+				F5AFF0DE2874B4464527972E /* Pods_MPServiceBridge_Example_MPServiceBridge_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +151,7 @@
 		6003F593195388D20070C39A /* Example for MPServiceBridge */ = {
 			isa = PBXGroup;
 			children = (
+				4750FB4628094B09007D9DC1 /* AppServices */,
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -192,6 +212,8 @@
 				443F4E4CA1818F35A6A88355 /* Pods-MPServiceBridge_Example.release.xcconfig */,
 				AE9599CEDFCC2F9BD68872AF /* Pods-MPServiceBridge_Tests.debug.xcconfig */,
 				93E16ECC81286828C8E59C87 /* Pods-MPServiceBridge_Tests.release.xcconfig */,
+				488BC399E8115195D3F4F9E3 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.debug.xcconfig */,
+				7722C96E9C812DF6970BEF84 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -351,7 +373,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MPServiceBridge_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-MPServiceBridge_Example-MPServiceBridge_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,16 +386,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MPServiceBridge_Tests/Pods-MPServiceBridge_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-MPServiceBridge_Example-MPServiceBridge_Tests/Pods-MPServiceBridge_Example-MPServiceBridge_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MPServiceBridge/MPServiceBridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MPServiceBridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPServiceBridge_Tests/Pods-MPServiceBridge_Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPServiceBridge_Example-MPServiceBridge_Tests/Pods-MPServiceBridge_Example-MPServiceBridge_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -385,7 +407,9 @@
 			files = (
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MPViewController.m in Sources */,
+				4750FB4B28094B2D007D9DC1 /* MPAliPayService.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				4750FB4C28094B2D007D9DC1 /* MPWeChatService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +566,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE9599CEDFCC2F9BD68872AF /* Pods-MPServiceBridge_Tests.debug.xcconfig */;
+			baseConfigurationReference = 488BC399E8115195D3F4F9E3 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -567,7 +591,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93E16ECC81286828C8E59C87 /* Pods-MPServiceBridge_Tests.release.xcconfig */;
+			baseConfigurationReference = 7722C96E9C812DF6970BEF84 /* Pods-MPServiceBridge_Example-MPServiceBridge_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

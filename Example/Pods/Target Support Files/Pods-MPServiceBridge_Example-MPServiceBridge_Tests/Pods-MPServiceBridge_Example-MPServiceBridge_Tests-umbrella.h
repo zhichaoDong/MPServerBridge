@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_MPServiceBridge_TestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_MPServiceBridge_TestsVersionString[];
+FOUNDATION_EXPORT double Pods_MPServiceBridge_Example_MPServiceBridge_TestsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MPServiceBridge_Example_MPServiceBridge_TestsVersionString[];
 

@@ -1,0 +1,6 @@
+framework module Pods_MPServiceBridge_Example_MPServiceBridge_Tests {
+  umbrella header "Pods-MPServiceBridge_Example-MPServiceBridge_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

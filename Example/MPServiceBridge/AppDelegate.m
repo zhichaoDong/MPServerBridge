@@ -6,14 +6,30 @@
 //  Copyright (c) 2022 zhichaoDong. All rights reserved.
 //
 
+#import "AppDelegate+MPServiceBridge.h"
+//App services
+#import "MPWeChatService.h"
+#import "MPAliPayService.h"
 #import "AppDelegate.h"
 
-
 @implementation AppDelegate
+
+#warning 注册绑定
++ (void)load{
+    [AppDelegate mp_registerServiceDict: @{
+        NSStringFromClass([MPWeChatService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
+        NSStringFromClass([MPAliPayService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate))
+    }];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [AppDelegate mp_serviceClassByProtocol:@protocol(UIApplicationDelegate) classBlock:^(Class  _Nonnull __unsafe_unretained class) {
+        if ([class respondsToSelector:@selector(application:didFinishLaunchingWithOptions:)]) {
+            [class application:application didFinishLaunchingWithOptions:launchOptions];
+        }
+    }];
     return YES;
 }
 

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "AppDelegate+MPServiceBridge.h"
 
 FOUNDATION_EXPORT double MPServiceBridgeVersionNumber;
 FOUNDATION_EXPORT const unsigned char MPServiceBridgeVersionString[];
