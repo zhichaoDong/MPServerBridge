@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'MPServiceBridge_Example' do
+  pod 'MPServiceBridge', :path => '../'
+
+  target 'MPServiceBridge_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

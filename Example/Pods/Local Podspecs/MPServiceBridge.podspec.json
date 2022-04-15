@@ -1,0 +1,22 @@
+{
+  "name": "MPServiceBridge",
+  "version": "0.1.0",
+  "summary": "A short description of MPServiceBridge.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/zhichaoDong/MPServiceBridge",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "zhichaoDong": "dzc_xinlang@sina.com"
+  },
+  "source": {
+    "git": "https://github.com/zhichaoDong/MPServiceBridge.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MPServiceBridge/Classes/**/*"
+}
