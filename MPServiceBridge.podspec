@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MPServiceBridge'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'iOS AppDelegate瘦身之利用 Protocol-Class方案实现一个 AppDelegate Category.'
   s.description      = <<-DESC
   TODO: iOS AppDelegate瘦身之利用 Protocol-Class方案实现一个 AppDelegate Category.
