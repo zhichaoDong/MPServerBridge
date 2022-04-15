@@ -10,11 +10,11 @@
 
 const char k_serverStoreKey;
 
-@interface AppDelegate ()
+@interface UIResponder ()
 @property (nonatomic, strong) NSMutableDictionary * serviceStore;
 @end
 
-@implementation AppDelegate (MPServiceBridge)
+@implementation UIResponder (MPServiceBridge)
 
 + (instancetype)shared {
     static id _bridge = nil;
@@ -44,12 +44,12 @@ const char k_serverStoreKey;
         
         NSString * protoStr = protocolList[i];
         Protocol * protocol = NSProtocolFromString(protoStr);
-        [AppDelegate registerService:class andProtocol:protocol];
+        [UIResponder registerService:class andProtocol:protocol];
     }
 }
 
 + (void)mp_serviceClassByProtocol:(Protocol *)protocol classBlock:(void(^)(Class class))classBlock{
-    NSArray * classList =  [AppDelegate shared].serviceStore.allKeys;
+    NSArray * classList =  [UIResponder shared].serviceStore.allKeys;
     for (int i=0; i<classList.count; i++) {
         NSString * classStr = classList[i];
         Class class = NSClassFromString(classStr);
@@ -65,14 +65,14 @@ const char k_serverStoreKey;
     if ([a_class conformsToProtocol:protocol])
     {
         NSString * className = NSStringFromClass(a_class);
-        AppDelegate * bridge = [AppDelegate shared];
+        UIResponder * bridge = [UIResponder shared];
         [bridge.serviceStore setValue:NSStringFromProtocol(protocol)
                                              forKey:className];
     }
 }
 
 + (Class)serviceForProtocol:(Protocol *)protocol {
-    NSString * className = [[AppDelegate shared].serviceStore valueForKey:NSStringFromProtocol(protocol)];
+    NSString * className = [[UIResponder shared].serviceStore valueForKey:NSStringFromProtocol(protocol)];
     NSAssert1(className,@"【%@ Debug Msg】not find Service class!",[self class]);
     return NSClassFromString(className);
 }
