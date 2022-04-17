@@ -6,11 +6,12 @@
 //  Copyright (c) 2022 zhichaoDong. All rights reserved.
 //
 
+#import "AppDelegate.h"
 #import "AppDelegate+MPServiceBridge.h"
 //App services
 #import "MPWeChatService.h"
 #import "MPAliPayService.h"
-#import "AppDelegate.h"
+#import "MPPushService.h"
 
 @implementation AppDelegate
 
@@ -18,7 +19,8 @@
 + (void)load{
     [AppDelegate mp_registerServiceDict: @{
         NSStringFromClass([MPWeChatService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
-        NSStringFromClass([MPAliPayService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate))
+        NSStringFromClass([MPAliPayService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
+        NSStringFromClass([MPPushService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate))
     }];
 }
 
