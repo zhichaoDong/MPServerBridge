@@ -12,6 +12,7 @@
 #import "MPWeChatService.h"
 #import "MPAliPayService.h"
 #import "MPPushService.h"
+#import "MPLociationService.h"
 
 @implementation AppDelegate
 
@@ -20,7 +21,8 @@
     [AppDelegate mp_registerServiceDict: @{
         NSStringFromClass([MPWeChatService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
         NSStringFromClass([MPAliPayService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
-        NSStringFromClass([MPPushService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate))
+        NSStringFromClass([MPPushService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate)),
+        NSStringFromClass([MPLociationService class]):NSStringFromProtocol(@protocol(UIApplicationDelegate))
     }];
 }
 
